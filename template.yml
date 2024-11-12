@@ -106,8 +106,4 @@ Resources:
       Action: lambda:InvokeFunction
       Principal: apigateway.amazonaws.com
 
-  Integration:
-    Type: AWS_PROXY
-    IntegrationHttpMethod: POST
-    Uri: !Sub arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${MyLambdaFunction.Arn}/invocations
-    
+ 
